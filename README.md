@@ -63,4 +63,6 @@ Currently configured to use:
 Lakshya Dubey
 
 ## Preview
-
+![image](https://github.com/user-attachments/assets/c4559544-7bf7-4954-93dd-0013162fe371)
+![image](https://github.com/user-attachments/assets/0000d5c1-c361-4d8f-98ee-bca7d526d89c)
+![image](https://github.com/user-attachments/assets/620b3bdb-d19a-4241-8808-ff3f15e21d78)

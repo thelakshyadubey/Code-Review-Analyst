@@ -17,8 +17,8 @@ Codalyze is an AI-powered code review tool built with Streamlit and LangChain us
 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/codalyze.git
-cd codalyze
+git clone https://github.com/thelakshyadubey/Code-Review-Analyst.git
+cd Code-Review-Analyst
 ```
 
 2. Install dependencies

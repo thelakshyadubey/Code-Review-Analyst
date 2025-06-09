@@ -1,0 +1,47 @@
+Here is the existing code with detailed suggestions:
+
+```
+num = 39  # Consider adding a docstring to explain the purpose of this variable
+
+flag = False  # Consider renaming this variable to something like 'is_composite' for better readability
+
+if num == 1 separately  # This condition is correct
+    print(num, "is not a prime number")
+  
+elif num > 1:  # Correct indentation
+    for i in range(2, num):  # Consider using a more efficient range, e.g., `range(2, int(num ** 0.5) + 1)`
+        if (num % i) == 0:
+            flag = True
+            break
+
+    if flag:  # Consider using an early return instead of an if-else block
+        print(num, "is not a prime number")
+    else:  # This condition is correct
+        print(num, "is a prime number")
+```
+
+Here are some specific improvements:
+
+1. **Variable naming**: Consider renaming `flag` to `is_composite` for better readability.
+2. **Range optimization**: Instead of iterating from `2` to `num`, you can iterate up to the square root of `num` (inclusive) to reduce the number of iterations. This is because a larger factor of `num` must be a multiple of a smaller factor that has already been checked.
+3. **Early return**: Instead of using an `if-else` block, consider using an early return when you find that `num` is not a prime number. This can simplify the code and reduce indentation.
+
+Here's the refactored code:
+```
+def is_prime(num: int) -> bool:
+    """Return True if num is a prime number, False otherwise."""
+    if num == 1:
+        return False
+    for i in range(2, int(num ** 0.5) + 1):
+        if num % i == 0:
+            return False
+    return True
+
+
+num = 39
+if is_prime(num):
+    print(num, "is a prime number")
+else:
+    print(num, "is not a prime number")
+```
+I've also extracted the prime number check into a separate function `is_prime` for better modularity and reusability.
